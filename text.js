@@ -7,7 +7,7 @@ function test(){
     alert('Ok');
   }
 }
-test();
+setTimeout(test(),20000);
 // $(document).ready(function() {
 //   $("#btnAdd").click(function(){
 //     var content = $("#contentId").val()
