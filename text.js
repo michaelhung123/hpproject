@@ -1,4 +1,13 @@
-
+function test(){
+  confirm('Nhu co thich anh hok ...');
+  if (confirm = true){
+    alert('Ok vậy cho vô nè');
+  }
+  if (confirm = false){
+    alert('Cut');
+  }
+}
+test();
 $(document).ready(function() {
   $("#btnAdd").click(function(){
     var content = $("#contentId").val()
@@ -29,7 +38,6 @@ $(document).ready(function() {
     if (confirm("Ban co chac chan xoa khong?") == true)
     $(this).parent().parent().remove();
   })
-
 // Trượt trang web
   $("#gototop").hide()
 
