@@ -4,7 +4,7 @@ function test(){
     alert('Ok vậy cho vô nè');
   }
   if (confirm = false){
-    alert('Cut');
+    alert('Ok');
   }
 }
 test();
