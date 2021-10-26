@@ -1,13 +1,13 @@
-function test(){
-  confirm('Nhu co thich anh hok ...');
-  if (confirm = true){
-    alert('Ok vậy cho vô nè');
-  }
-  if (confirm = false){
-    alert('Ok');
-  }
-}
-setTimeout(test(),20000);
+// function test(){
+//   confirm('Nhu co thich anh hok ...');
+//   if (confirm = true){
+//     alert('Ok vậy cho vô nè');
+//   }
+//   if (confirm = false){
+//     alert('Ok');
+//   }
+// }
+// setTimeout(test(),20000);
 // $(document).ready(function() {
 //   $("#btnAdd").click(function(){
 //     var content = $("#contentId").val()
