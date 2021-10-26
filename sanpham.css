@@ -1,0 +1,411 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  /* MENU */
+  /* BOTTOM */
+  div.nav{
+  background-color: black;
+  z-index: 999;
+  position: fixed; 
+  width: 100%;
+  }
+  header{
+  /* width: 1700px; */
+  margin:0 auto;
+  /* max-width: 100%; */
+  display: flex;
+  padding: 0px 55px;
+  height: 70px; /* chiều cao của div.nav đến section ảnh*/ 
+  }
+  div.logo{
+  width: 25%;
+  padding: 20px 0px;
+  }
+  div.menu{
+  width: 75%;
+  }
+  div.logo > a >img{
+  width: 100%;
+  }
+  .menu > ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+  }
+  .menu > ul > li.item {
+  padding: 25px;
+  padding-top: 10px;
+  }
+  .menu > ul > li.item >a{
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  hr{
+  position: relative;
+  z-index: 999;
+  background: white;
+  margin-top: 0;
+  }
+  .phone > a > span > img{
+    width: 4%;
+  }
+  .phone {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .phone > a {
+    padding: 3px;
+  }
+  .phone > a > img{
+    width: 7%;
+  }
+   /* MENU HIDDEN */
+   div.dropmenu{
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease,transform 0.5s ease; 
+    opacity: 0;
+    position: absolute;
+    background-color:rgb(58, 55, 55);
+    left: 0;
+    right: 0;
+    transition-duration: 0.8s; /* thời gian diễn ra hiệu ứng*/
+  }
+  .item:hover .dropmenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  div.dropmenu-sub{
+    height: 275px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.menu-group{
+    float: left;
+    width: 25%;
+  }
+  h3 > a:hover{
+    color: white;
+  }
+  a:hover{
+    color:#999;
+    text-decoration-color: white;
+  }
+  a{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #999;
+    text-decoration: none;
+  }
+  h3 > a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  ul > ul > li{
+    padding: 8px 10px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  /* CSS HOVER MENU */
+  .btn {
+  line-height: 35px; /* chiều cao giữa 2 border và text*/
+  text-transform:uppercase; /*kiểu chữ */
+  }
+  .btn-2 {
+    letter-spacing: 3px; /*khoảng cách của chữ trước khi hover*/
+  }
+  .btn-2.color-green:hover,
+  .btn-2.color-green:active {
+  color: white; /*Màu sản phẩm*/
+  }
+  .btn-2:hover,
+  .btn-2:active {
+  letter-spacing: 3.5px; /*khoảng cách của chữ sau khi hover*/
+  }
+  .btn-2:after,
+  .btn-2:before {
+  backface-visibility:visible;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 300ms ease-in-out;  /*độ trễ của hiệu ứng menu*/
+  width: 0;
+  opacity: 0;
+  }
+  .btn-2.color-green:after,
+  .btn-2.color-green:before {
+  border: 1px solid white;
+  }
+  .btn-2:hover:after,
+  .btn-2:hover:before {
+  backface-visibility: hidden;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  opacity: 1;
+  }
+
+  /* SECTION */
+  section{
+    padding-top: 70px;
+  }
+  hr{
+    position: relative;
+    z-index: 1;
+    background:#444343;
+    margin-top: 0;
+    }
+ul.menu-item{
+  padding: 20px 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  display: flex;
+}
+ul.menu-item >li{
+  padding: 0px 5px;
+}
+ul.menu-item >li>a{
+  font-size: 14px;
+}
+div.box-furniture{
+  background-color: rgb(253, 253, 253);
+}
+div.box-main{
+  background-color: #111111;
+  height: 550px;
+}
+h1{
+  font-weight: bold;
+  text-align: center;
+}
+div.main{
+    width: 100%;
+    max-width: 1640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+div.box-text{
+    text-align: left;
+    max-width: 986px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 70px;
+}
+/* BOX - FURNITURE */
+.group-box{
+  padding: 60px;
+}
+.box-tittle{
+  padding-bottom: 20px;
+  /* position: relative; */
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.wrap-main > span{
+  color: black;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/* .box-tittle > hr{
+    position: absolute;
+    width: 70%;
+    left: 23%;
+    top: 40%;
+    height: 1px;
+    z-index: 5;
+    background: #D3D2D2;
+    margin-top: 0;
+} */
+.wrap-main{
+  position: relative;
+}
+.wrap-main::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #D3D2D2;
+}
+.wrap-main > a{
+  position: absolute;
+  right: 0;
+  top: 30%;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color:black;
+}
+.box-image{
+  display: flex;
+  white-space: nowrap;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.box-image > div{
+  padding: 5px;
+}
+.image > a > img{
+  width: 100%;
+}
+.image{
+  position: relative;
+}
+div.all{
+  opacity: 0;
+  position: absolute;
+  color: red;
+  background: rgba(255, 249, 249, 0.8);
+  top: 2px;
+  bottom: 4px;
+  left: 3px;
+  right: 3px;
+}
+div.all > div{
+  color: rgb(160, 160, 160);
+  text-shadow: 2px 2px 3px black;
+  font-size: 30px;
+  font-weight:600;
+  font-family: Helvetica,'Helvetica Neue',Arial,'Lucida Grande',sans-serif;
+  letter-spacing: 2.2px;
+  padding-top: 160px;
+  padding-left: 10px;
+}
+.all > a{
+  
+  color:rgb(238, 238, 238);
+  border: 2px solid #9DA2AF;
+  color: #2f2f2ffa;
+  padding: 10px;
+  font-size: 15px;
+  font-weight:600;
+  font-family: Helvetica,'Helvetica Neue',Arial,'Lucida Grande',sans-serif;
+  letter-spacing: 2.2px;
+  position: absolute;
+  top: 267px;
+  left: 115px;
+}
+.all > a:hover{
+  background: #5B5B5B;
+  color:white;
+  text-decoration: none;
+}
+ .image:hover .all{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.image:hover a{
+  transform: translateY(-30px);
+  transition: transform 0.5s;
+}
+  /*FOOTER*/
+  /* footer{
+    padding: 30px;
+    background-color: rgb(10, 11, 12);
+    padding-top: 0px;
+  }
+  h1{
+    display: block;
+    position: relative;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      
+    }
+  h1:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 0;
+    left: auto;
+    right: 0;
+    height: 100%;
+    background-color: rgb(91, 172, 91);
+    transition: .5s;
+    z-index: -2;
+    }
+    h1:hover:before {
+    width: 100%;
+    left:0;
+    right: auto;
+  }
+  footer ul{
+    list-style-type: none;
+  }
+  .logofooter{
+    width: 10%;
+  }
+  .logofooter > img{
+    width: 100%;
+    
+  }
+  a.linkcolor{
+    color: rgb(156, 183, 233);
+  }
+  div.menufooter{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col50{
+    width: 50%;
+  } */
+  /* TABLE FOOTER */
+  /* table.content{
+    width: 100%;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 10px;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+  }
+  input[type=submit]{
+    background-color: orange;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid orange;
+  }
+  table.content tr:last-child{
+    text-align: right;
+  } */

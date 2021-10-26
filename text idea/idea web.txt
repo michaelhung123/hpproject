@@ -1,0 +1,13 @@
+Kiểu 1: website cố định trong 1 màn hình.
+ Dữ liệu ít, chủ yếu dạng hình
+
+Kiểu 2: website trượt xuống vừa phải, từ 1-5 màn hình.
+ Dữ liệu hỗn hợp hình & chữ.
+
+Kiểu 3: website trượt dài thoải mái, trên 8 lần màn hình.
+ Dữ liệu nhiều, chủ yếu dạng chữ
+
+
+
+
+

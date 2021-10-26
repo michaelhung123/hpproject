@@ -1,0 +1,83 @@
+/*FOOTER*/
+footer{
+    padding: 30px;
+    background-color: rgb(10, 11, 12);
+    padding-top: 0px;
+  }
+  h1{
+    display: block;
+    position: relative;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      
+    }
+  h1:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 0;
+    left: auto;
+    right: 0;
+    height: 100%;
+    background-color: rgb(91, 172, 91);
+    transition: .5s;
+    z-index: -2;
+    }
+    h1:hover:before {
+    width: 100%;
+    left:0;
+    right: auto;
+  }
+  footer ul{
+    list-style-type: none;
+  }
+  .logofooter{
+    width: 10%;
+  }
+  .logofooter > img{
+    width: 100%;
+    
+  }
+  a.linkcolor{
+    color: rgb(156, 183, 233);
+  }
+  div.menufooter{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col50{
+    width: 50%;
+  }
+  /* TABLE FOOTER */
+  table.content{
+    width: 100%;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 10px;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+  }
+  input[type=submit]{
+    background-color: orange;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid orange;
+  }
+  table.content tr:last-child{
+    text-align: right;
+  }

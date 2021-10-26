@@ -1,0 +1,249 @@
+body{
+    background-color: rgb(0,0,0);
+    color: white;
+  }
+  *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  /* MENU */
+  /* TOP */
+  div.top{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+  }
+  div.top > a{
+    text-decoration: none;
+  }
+  h1{
+  display: block;
+  position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  h1:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  width: 0;
+  left: auto;
+  right: 0;
+  height: 100%;
+  background-color: rgb(91, 172, 91);
+  transition: .5s;
+  z-index: -2;
+  }
+  h1:hover:before {
+  width: 100%;
+  left:0;
+  right: auto;
+  }
+  /* BOTTOM */
+  div.nav{
+  z-index: 999;
+  position: fixed;
+  background-color: rgb(0,0,0);
+  width: 100%;
+  }
+  header{
+  /* width: 1700px; */
+  margin:0 auto;
+  /* max-width: 100%; */
+  display: flex;
+  padding: 0px 55px;
+  height: 70px; /* chiều cao của div.nav đến section ảnh*/ 
+  }
+  div.logo{
+  width: 25%;
+  padding: 20px 0px;
+  }
+  div.menu{
+  width: 75%;
+  }
+  div.logo > a >img{
+  width: 100%;
+  }
+  .menu > ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+  }
+  .menu > ul > li.item {
+  padding: 25px;
+  padding-top: 10px;
+  }
+  .menu > ul > li.item >a{
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  hr{
+  position: relative;
+  z-index: 999;
+  background: white;
+  margin-top: 0;
+  }
+  /* CSS HOVER MENU */
+  .btn {
+  line-height: 35px; /* chiều cao giữa 2 border và text*/
+  text-transform:uppercase; /*kiểu chữ */
+  }
+  .btn-2 {
+    letter-spacing: 3px; /*khoảng cách của chữ trước khi hover*/
+  }
+  .btn-2.color-green:hover,
+  .btn-2.color-green:active {
+  color: rgb(21, 204, 21); /*Màu sản phẩm*/
+  }
+  .btn-2:hover,
+  .btn-2:active {
+  letter-spacing: 3.5px; /*khoảng cách của chữ sau khi hover*/
+  }
+  .btn-2:after,
+  .btn-2:before {
+  backface-visibility:visible;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 300ms ease-in-out;  /*độ trễ của hiệu ứng menu*/
+  width: 0;
+  opacity: 0;
+  }
+  .btn-2.color-green:after,
+  .btn-2.color-green:before {
+  border: 1px solid green;
+  }
+  .btn-2:hover:after,
+  .btn-2:hover:before {
+  backface-visibility: hidden;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  opacity: 1;
+  }
+  /* GIỚI THIỆU*/
+  .today > a{
+    text-decoration-line: none;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  nav{
+    padding: 30px;
+  }
+  p{
+    font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 7px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  nav > div.today {
+      text-align: center;
+      font-weight: 100;
+      font-size: 40px;
+      color: aliceblue !important;
+      padding-top: 100px;
+      padding-bottom: 40px;
+  }
+  .firstinfor{
+    display: flex;
+    width: 100%;
+  } 
+  div.firstinfor > p{
+    width: 40%;
+  }
+  .map{
+    width: 60%;
+    padding-left: 30px;
+  }
+  
+  .map > iframe{
+    height: 250px;
+
+    width: 100%;
+  }
+  div.main{
+    margin-top: 30px;
+  }
+div.inmain{
+  display: flex;
+}
+.row1{
+  padding: 10px;
+  width: 50%;
+}
+
+
+.row1 > img{
+  width: 100%;
+
+}
+
+/*FOOTER*/
+footer{
+  padding: 30px;
+  background-color: rgb(10, 11, 12);
+  padding-top: 0px;
+}
+footer ul{
+  list-style-type: none;
+}
+.logofooter{
+  width: 10%;
+}
+.logofooter > img{
+  width: 100%;
+  
+}
+a.linkcolor{
+  color: rgb(156, 183, 233);
+}
+div.menufooter{
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+div.col25{
+  width: 25%;
+}
+div.col25{
+  width: 25%;
+}
+div.col50{
+  width: 50%;
+}
+/* TABLE FOOTER */
+table.content{
+  width: 100%;
+}
+input[type=text]{
+  width: 100%;
+  padding: 10px;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+}
+input[type=submit]{
+  background-color: orange;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid orange;
+}
+table.content tr:last-child{
+  text-align: right;
+}

@@ -1,0 +1,11 @@
+
+	+ Giới thiệu tóm tắt về công ty
+	+ Sản phẩm tiêu? Số lượng bao nhiêu?
+	+ Sản phẩm mới nhất/Bán chạy nhất/Yêu thích nhất?
+	+ Dịch vụ
+	+ Video clip
+	+ Ý kiến khách hàng
+	+ Địa chỉ và thông tin liên hệ công ty ở footer
+	+ Hotline, nick chat, hộp tư vấn trực tuyến
+font: 300 14px 'Montserrat'; ( MENU )
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif

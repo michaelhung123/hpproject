@@ -1,0 +1,84 @@
+section.contain{
+    background-color: rgb(0, 204, 255);
+}
+#gototop{
+    display: block;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    padding: 20px 15px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 999;
+}
+body{
+    background-color: black;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.main{
+    padding: 20px;
+}
+div.main > input[type=text]{
+    padding: 5px;
+}
+div.main > input[type=date]{
+    padding: 5px;
+}
+div.main > input[type=button]{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.col5{
+    width: 5%;
+}
+.col70{
+    width: 70%;
+}
+.col15{
+    width: 15%;
+}
+.col{
+    width: 5%;
+}
+div.item{
+    background: rgb(251, 163, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+div.col5 > input[type=button]{
+    padding: 5px 20px;
+}
+.active{
+    background: chartreuse !important;
+}
+
+
+footer{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+footer > span{
+    position: relative;
+    animation: dichuyen 10s infinite;
+}
+@keyframes dichuyen{
+    from { 
+        left: 0
+    }
+
+     to {
+         left:  100%;
+     }
+}
