@@ -10,10 +10,10 @@ function check(){
     var name1=arr[0].value;
     var passWord=arr[1].value;
     if( name1== "" || passWord == "" ){
-        alert("Please enter the full account password");
+        alert("Vui lòng nhập đầy đủ thông tin.");
     }
     else{
-        confirm("Welcome " + name1);
+        confirm("WELCOME " + name1);
     } 
 }
 function check1(){
@@ -23,10 +23,10 @@ function check1(){
     var createPass=arr[5].value;
     var confirmPass=arr[6].value;
     if( name2== "" || email == "" || createPass == "" || confirmPass=="" ){
-        alert("Please enter full information");
+        alert("Vui lòng nhập đầy đủ thông tin");
         return;
     }else if(createPass != confirmPass){
-        alert("createPass and confirmPass need to be the same");
+        alert("Mật khẩu không khớp nhau. Vui lòng thử lại!");
         return;
     }
     else{
