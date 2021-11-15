@@ -1,59 +1,21 @@
-body{
-    background-color: rgb(0,0,0);
-    color: white;
-  }
-  *{
-  margin:0;
+*{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  /* MENU */
-  /* TOP */
-  div.top{
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -60px;
-  }
-  div.top > a{
-    text-decoration: none;
-  }
-  h1{
-  display: block;
-  position: relative;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    
-  }
-  h1:before{
-  content:"";
-  position: absolute;
-  top: 0;
-  width: 0;
-  left: auto;
-  right: 0;
-  height: 100%;
-  background-color: rgb(91, 172, 91);
-  transition: .5s;
-  z-index: -2;
-  }
-  h1:hover:before {
-  width: 100%;
-  left:0;
-  right: auto;
-  }
-  /* BOTTOM */
-  div.nav{
+}
+body{
+  /* font-family: 'Montserrat', sans-serif; */
+  color: white;
+  background-color: #111111;
+}
+/* MENU */
+div.nav{
   z-index: 999;
   position: fixed;
   background-color: rgb(0,0,0);
   width: 100%;
   }
-  header{
+  div.nav header{
   /* width: 1700px; */
   margin:0 auto;
   /* max-width: 100%; */
@@ -61,35 +23,101 @@ body{
   padding: 0px 55px;
   height: 70px; /* chiều cao của div.nav đến section ảnh*/ 
   }
-  div.logo{
+  div.nav div.logo{
   width: 25%;
   padding: 20px 0px;
   }
-  div.menu{
+  div.nav div.menu{
   width: 75%;
   }
-  div.logo > a >img{
+  div.nav div.logo > a >img{
   width: 100%;
   }
-  .menu > ul{
+  div.nav .menu > ul{
     list-style-type: none;
     display: flex;
     width: 100%;
   }
-  .menu > ul > li.item {
+  div.nav .menu > ul > li.item {
   padding: 25px;
   padding-top: 10px;
   }
-  .menu > ul > li.item >a{
+  div.nav .menu > ul > li.item >a{
     color: #999;
     text-decoration: none;
     font-size: 15px;
   }
-  hr{
+  div.nav hr{
   position: relative;
   z-index: 999;
   background: white;
   margin-top: 0;
+  }
+  div.nav .phone > a > span > img{
+    width: 4%;
+  }
+  div.nav .phone {
+    padding-top: 20px;
+    text-align: center;
+  }
+  div.nav .phone > a {
+    padding: 3px;
+  }
+  div.nav .phone > a > img{
+    width: 7%;
+  }
+  /* MENU HIDDEN */
+  div.nav div.dropmenu{
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease,transform 0.5s ease; 
+    opacity: 0;
+    position: absolute;
+    background-color:rgb(58, 55, 55);
+    left: 0;
+    right: 0;
+    transition-duration: 0.8s; /* thời gian diễn ra hiệu ứng*/
+  }
+  div.nav .item:hover .dropmenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  div.nav div.dropmenu-sub{
+    height: 275px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.nav div.menu-group{
+    float: left;
+    width: 25%;
+  }
+  div.nav h3 > a:hover{
+    color: white;
+  }
+  div.nav a:hover{
+    color:#999;
+    text-decoration-color: white;
+  }
+  div.nav a{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #999;
+    text-decoration: none;
+  }
+  div.nav h3 > a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  div.nav ul > ul > li{
+    padding: 8px 10px;
+  }
+  div.nav ul{
+    list-style-type: none;
   }
   /* CSS HOVER MENU */
   .btn {
@@ -101,7 +129,7 @@ body{
   }
   .btn-2.color-green:hover,
   .btn-2.color-green:active {
-  color: rgb(21, 204, 21); /*Màu sản phẩm*/
+  color: white; /*Màu sản phẩm*/
   }
   .btn-2:hover,
   .btn-2:active {
@@ -122,7 +150,7 @@ body{
   }
   .btn-2.color-green:after,
   .btn-2.color-green:before {
-  border: 1px solid green;
+  border: 1px solid white;
   }
   .btn-2:hover:after,
   .btn-2:hover:before {
@@ -131,11 +159,13 @@ body{
   width: 70%;
   opacity: 1;
   }
+
   /* GIỚI THIỆU*/
   .today > a{
     text-decoration-line: none;
     font-size: 50px;
     font-weight: bolder;
+    color: #f2f2f0 !important;
   }
   nav{
     padding: 30px;
@@ -161,6 +191,7 @@ body{
   .firstinfor{
     display: flex;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
   } 
   div.firstinfor > p{
     width: 40%;
@@ -190,6 +221,19 @@ div.inmain{
 .row1 > img{
   width: 100%;
 
+}
+/* ON TOP */
+#ontop{
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
 }
 
 /*FOOTER*/
@@ -238,11 +282,14 @@ textarea{
   padding: 10px;
   height: 100px;
 }
-input[type=submit]{
+button[type=button]{
   background-color: orange;
   color: #fff;
   padding: 15px;
   border: 1px solid orange;
+}
+.button{
+  text-align: right;
 }
 table.content tr:last-child{
   text-align: right;

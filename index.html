@@ -12,6 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>HP Furniture</title>
+    <!-- jQ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      if ($(this).scrollTop()){
+        $('#ontop').fadeIn();
+      } else{
+        $('#ontop').fadeOut();
+      }
+    });
+    $('#ontop').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 300)
+    });
+  });
+
+    </script>
 </head>
 <body>
     <div class="nav">
@@ -22,7 +41,7 @@
      <div class="menu">
         <ul>
             <li class="item"><a  href="index.html" class="btn btn-2 color-green">Trang chủ</a></li>
-            <li class="item"><a  href="intro.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
+            <li class="item"><a  href="intro2.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
             <li class="item"><a  href="sanpham.html" class="btn btn-2 color-green">SẢN PHẨM</a>
               <div class="dropmenu">
                 <div class="dropmenu-sub">
@@ -71,7 +90,7 @@
                 </div>
               </div>  
             </li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">DỊCH VỤ</a></li>
+            <li class="item"><a  href="service.html" class="btn btn-2 color-green">DỊCH VỤ</a></li>
             <li class="item"><a  href="login.html" class="btn btn-2 color-green">ĐĂNG NHÂP</a></li>
         </ul>
     </div>
@@ -94,40 +113,41 @@
               <li data-target="#demo" data-slide-to="2"></li>
               <li data-target="#demo" data-slide-to="3"></li>
               <li data-target="#demo" data-slide-to="4"></li>
+              <li data-target="#demo" data-slide-to="5"></li>
             </ul>
           
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="text idea/imgmain1.jpg" alt="Los Angeles">
+                <img src="text idea/imgmain4.png" alt="Los Angeles">
                     <div class="carousel-caption">
                       <h3>Los Angeles</h3>
                       <p>We had such a great time in LA!</p>
                     </div>
               </div>
               <div class="carousel-item">
-                <img src="text idea/imgmain2.jpg" alt="Chicago">
+                <img src="text idea/imgmain5.jpg" alt="Chicago">
                 <div class="carousel-caption">
                     <h3>California</h3>
                     <p>WELCOME</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img src="text idea/imgmain3.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3>Las Vegas</h3>
-                    <p>We had such a great time in LA!</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="text idea/imgmain5.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3>Las Vegas</h3>
-                    <p>We had such a great time in LA!</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
                 <img src="text idea/imgmain6.jpg" alt="New York">
+                <div class="carousel-caption">
+                    <h3>Las Vegas</h3>
+                    <p>We had such a great time in LA!</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="text idea/imgmain1.jpg" alt="New York">
+                <div class="carousel-caption">
+                    <h3>Las Vegas</h3>
+                    <p>We had such a great time in LA!</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="text idea/imgmain2.jpg" alt="New York">
                 <div class="carousel-caption">
                     <h3>Las Vegas</h3>
                     <p>We had such a great time in LA!</p>
@@ -143,41 +163,48 @@
             </a>
           </div>
     </section>
-    <!-- Công trình -->
-    <div class="group-construction">
-      <div class="construction">
-        <div class="item-construction">
-        <h5 onclick="color()">GIỚI THIỆU</h5>
-        <div class="item-img"><a href='https://www.houzz.in/photos/seeley-living-room-a-phvw-vp~214101' ><img src='https://st.hzcdn.com/simgs/pictures/living-rooms/seeley-living-room-a-michael-abrams-interiors-img~de4195010e272f91_8-5791-1-e6951ab.jpg' ></a></small></div>
-        <p>khởi nguồn từ lâu năm với ý tưởng tạo ra sự khác biệt và gu thẩm mỹ Tinh tế, chúng tôi đã trở thành và giữ vững vị trí thương hiệu nội thất hàng đầu Việt Nam</p>
-        <hr>
-        </div>
-        <div class="item-construction">
-          <h5>SẢN PHẨM</h5>
-          <div class="item-img"><a  href='https://www.houzz.in/photos/family-home-on-a-drive-to-the-heath-phvw-vp~19124472' ><img src='https://st.hzcdn.com/simgs/pictures/bedrooms/family-home-on-a-drive-to-the-heath-clifton-interiors-ltd-img~80e1140e044a4e56_8-4732-1-0d69a5e.jpg'></a></small></div>
-          <p>khởi nguồn từ lâu năm với ý tưởng tạo ra sự khác biệt và gu thẩm mỹ Tinh tế, chúng tôi đã trở thành và giữ vững vị trí thương hiệu nội thất hàng đầu Việt Nam</p>
-          <hr>
-          </div>
-      </div>
-      <div  class="construction">
-        <div class="item-construction">
-          <h5>DỊCH VỤ</h5>
-          <div class="item-img"><a rel='follow' href='https://www.houzz.in/photos/kitchen-renovations-phvw-vp~14929775' ><img src='https://st.hzcdn.com/simgs/pictures/kitchens/kitchen-renovations-revision-llc-img~e0013ffb03cd6cdf_8-4431-1-0bedcd0.jpg'></a></small></div>
-          <p>khởi nguồn từ lâu năm với ý tưởng tạo ra sự khác biệt và gu thẩm mỹ Tinh tế, chúng tôi đã trở thành và giữ vững vị trí thương hiệu nội thất hàng đầu Việt Nam</p>
-          <hr>
-          </div>
-          <div class="item-construction">
-            <h5>LIÊN HỆ</h5>
-            <div class="item-img"><a rel='follow' href='https://www.houzz.in/photos/snowman-residence-phvw-vp~57841118'><img src='https://st.hzcdn.com/simgs/pictures/bathrooms/snowman-residence-geoff-chick-and-associates-img~f24165a4076c4d7f_8-8900-1-9bc5c62.jpg' ></a></small></div>
-            <p>khởi nguồn từ lâu năm với ý tưởng tạo ra sự khác biệt và gu thẩm mỹ Tinh tế, chúng tôi đã trở thành và giữ vững vị trí thương hiệu nội thất hàng đầu Việt Nam</p>
-            <hr>
+    <nav>     
+      <div class="main">
+          <div class="inmain">
+            <div class="row1">
+              <h4 ><a href="intro2.html"> Giới Thiệu</a></h4>
+                <img src="villa/villa1.jpg" alt="">                 
+                <p>HP Furniture là showrom một luôn được nâng cấp và đàu tư mạnh nhằm mang đến sự chỉnh chu và hoàn hảo nhất khi đến tay người dùng</p>
+                <hr>
             </div>
+             
+              <div class="row1">
+                <h4><a href="sanpham.html"> Sản Phẩm</a></h4>
+                  <img src="text idea/product.jpg" alt="">                 
+                  <p>Thiết kế hiện đại, đơn giản. HP Furniture đã mất nhiều thời gian để lên ý tưởng và thực hiện nhằm mang đến sự thoải mái cho người sử dụng</p>
+                  <hr>
+              </div>
+              
+          </div>
       </div>
-    </div>
+      <div class="main">
+          <div class="inmain">
+              <div class="row1">
+                <h4><a href="service.html">Dịch Vụ</a></h4>
+                  <img src="text idea/service.jpg" alt="">                  
+                  <p>Song song với chất lượng sản phẩm thì Dịch vụ chăm sóc khách hàng cũng là một yếu tố quan trọng giữa dẫn đến thành công cho HP Furniture</p>
+                  <hr>
+                </div>
+              <div class="row1">
+                <h4><a href="#">Liên Hệ</a></h4>
+                  <img src="text idea/contact.jpg" alt="">                 
+                  <p>Là một showroom lớn chúng tôi hiểu được tầm quan trọng khi nắm vững tâm lí khách hàng, vì thế đội ngũ tiếp nhận thông tin luôn sẵn sàng phục vụ bạn trong mọi hoàn cảnh</p>
+                  <hr>
+              </div>
+              
+          </div>
+      </div>
+  </nav>
+    
     <!-- HINH ANH VE CONG TRINH -->
     <div class="cong-trinh">
       <div class="item-congtrinh">
-        <a href="">
+        <a href="villa-infor.html">
           <img src="text idea/villa-blackwhite.jpg" alt="" class="new">
           <div class="overlay">
             <img src="text idea/villa.jpg" alt="" class="old"> 
@@ -185,11 +212,11 @@
         </a>
         <div class="box-text">
           <h3>THIẾT KẾ BIỆT THỰ</h3>
-          <div class="thc"><a href="#">Tìm hiểu thêm</a></div>
+          <div class="thc"><a href="villa-infor.html">Tìm hiểu thêm</a></div>
         </div>
       </div>
       <div class="item-congtrinh">
-        <a href="">
+        <a href="house4-infor.html">
           <img src="text idea/nhacap4-blackwhite.jpg" alt="" class="new">
           <div class="overlay">
             <img src="text idea/nhacap4.jpg" alt="" class="old"> 
@@ -197,57 +224,67 @@
           </a>
           <div class="box-text">
             <h3>THIẾT KẾ NHÀ CẤP 4</h3>
-            <div class="thc"><a href="#">Tìm hiểu thêm</a></div>
+            <div class="thc"><a href="house4-infor.html">Tìm hiểu thêm</a></div>
           </div>
       </div>
     </div>
     <!-- Footer -->
-    <footer>    
-      <h1>Liên hệ</h1>
-      <hr width="100%">
-      <div class="logofooter">
-              <img src="text idea/logoHP.jpg" alt="">
-          </div>
-      <div class="menufooter">
-      <div class="col25">
-          <ul>
-            <li><i class="fa fa-map-marker"></i> 60/18A Huỳnh Khương An, P5, Gò Vấp, TP.HCM</li>
-            <li><i class="fa fa-phone"></i> Phone: <a href="#"  class="linkcolor">0826523430</a> - <a href="#"  class="linkcolor">0901248851</a></li>
-            <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a> - <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
-          </ul>
-      </div>
-      <div class="col25">
-          <ul>
-              <li><i class="fa fa-comments"></i><a href="#"  class="linkcolor"> Phản hồi khách hàng</a></li>
-              <li><i class="fa fa-info"></i><a href="#"  class="linkcolor">     Thông tin tuyển dụng</a></li>  
-          </ul>
-      </div>
-      <div class="col50">
-          <table class="content">
-              <tr>
-                  <td>
-                      <input type="text" placeholder="Your name...">  
-                  </td>
-                  <td>
-                      <input type="text" placeholder="Email...">
-                  </td>
-              </tr>
-              <tr>
-                  <td colspan="2">
-                      <textarea placeholder="Message..." ></textarea>
-                  </td>
-                  
-              </tr>
-              <tr>
-                  <td colspan="2" >
-                      <input type="Submit" value="Send to">
-                  </td>
-              </tr>
-          </table>
-         
-      </div>
-      </div>
-
-  </footer>
+    
+  <div id="ontop">
+    <i class="fa fa-angle-double-up"></i>
+  </div>
+  <footer>    
+    <h1>Liên hệ</h1>
+    <hr width="100%">
+    <div class="logofooter">
+            <img src="text idea/logoHP.jpg" alt="">
+        </div>
+    <div class="menufooter">
+    <div class="col25">
+        <ul>
+          <li><i class="fa fa-map-marker"></i> 60/18A Huỳnh Khương An, P5, Gò Vấp, TP.HCM</li>
+          <li><i class="fa fa-phone"></i> Phone: <a href="#"  class="linkcolor">0826523430</a> - <a href="#"  class="linkcolor">0901248851</a></li>
+          <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a></li>
+          <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="col25">
+        <ul>
+            <li><i class="fa fa-comments"></i><a href="#"  class="linkcolor"> Phản hồi khách hàng</a></li>
+            <li><i class="fa fa-info"></i><a href="#"  class="linkcolor">     Thông tin tuyển dụng</a></li>  
+        </ul>
+    </div>
+    <div class="col50">
+        <table class="content">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Your name...">  
+                </td>
+                <td>
+                    <input type="text" placeholder="Email...">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea placeholder="Message..." ></textarea>
+                </td>
+                
+            </tr>
+            <tr>
+              <td colspan="2" class="button" >
+                 
+                  <button class="info-submit" type="button" onclick="hello()"> Submit </button>
+              </td>
+          </tr>
+          <script>  
+              function hello(){  
+                alert("Thông tin của bạn đã được gửi. Cảm ơn bạn đã đồng hành cùng HP Furniture");  
+              }  
+          </script>
+        </table>
+       
+    </div>
+    </div>
+</footer>
 </body>
 </html>

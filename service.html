@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <title>HP Furniture</title>
+     <!--animation css-->   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- jQ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      if ($(this).scrollTop()){
+        $('#ontop').fadeIn();
+      } else{
+        $('#ontop').fadeOut();
+      }
+    });
+    $('#ontop').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 300)
+    });
+  });
+
+    </script>
+    </head>
+<body>
+    <div class="nav">
+    <header>
+    <div class="logo">
+        <a href="#"><img src="text idea/HP-tittle1.JPG" alt=""></a>
+    </div>
+     <div class="menu">
+        <ul>
+            <li class="item"><a  href="index.html" class="btn btn-2 color-green">Trang chủ</a></li>
+            <li class="item"><a  href="intro2.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
+            <li class="item"><a  href="sanpham.html" class="btn btn-2 color-green">SẢN PHẨM</a>
+              <div class="dropmenu">
+                <div class="dropmenu-sub">
+                  <div class="menu-group">
+                    <ul>
+                        <h3><a href="#">PHÒNG KHÁCH</a></h3>
+                        <ul>
+                          <li><a href="#">Sofa</a></li>
+                          <li><a href="#">Armchair</a></li>
+                          <li><a href="#">Coffee Table</a></li>
+                          <li><a href="#">Side Table</a></li>
+                        </ul>
+                    </ul>
+                  </div>
+                  <div class="menu-group">
+                    <ul>
+                      <h3><a href="#">PHÒNG NGỦ</a></h3>
+                      <ul>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Nightstand</a></li>
+                        <li><a href="#">Bench</a></li>
+                        <li><a href="#">Chest</a></li>
+                      </ul>
+                    </ul>
+                  </div>
+                  <div class="menu-group">
+                    <ul>
+                      <h3><a href="#">PHÒNG ĂN</a></h3>
+                      <ul>
+                        <li><a href="#">Dining Table</a></li>
+                        <li><a href="#">Dining Chair</a></li>
+                        <li><a href="#">Bar</a></li>
+                      </ul>
+                    </ul>
+                  </div>
+                  <div class="menu-group">
+                    <ul>
+                      <h3><a href="#">PHÒNG TẮM</a></h3>
+                     <ul>
+                      <li><a href="#">Accessories</a></li>
+                      <li><a href="#">Bathroom Accessories</a></li>
+                      <li><a href="#">Fragrance</a></li>
+                     </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>  
+            </li>
+            <li class="item"><a  href="#" class="btn btn-2 color-green">DỊCH VỤ</a></li>
+            <li class="item"><a  href="login.html" class="btn btn-2 color-green">ĐĂNG NHÂP</a></li>
+        </ul>
+    </div>
+    <div class="phone">
+      <a href="#">
+        <span><img src="text idea/iconphone.png" alt=""></span>
+        HOTLINE: +84914938844 
+      </a>
+    </div>
+    </header>
+    </div>
+    <!-- <hr> -->
+    <first>
+        <div class="box-main">
+            <div class="main">
+              <hr>
+              <div class="box-text">
+                <h1>DỊCH VỤ BẢO TRÌ VÀ SỬA CHỮA</h1>
+                <h2>HP Furniture</h2>
+              </div>
+            </div>
+        </div>
+    </first>
+   <content>
+    <div class="hr">
+        <h1>Sửa chữa</h1>
+        <div></div>
+    </div>
+    <div class="color"></div>
+    <nav class="main">       
+        <div class="left">
+            <img src="service/Plumber.jpg"> 
+            <h4><i class="fa fa-map-marker"></i> TP. Hồ Chí Minh</h4>
+            <h4><i class="fa fa-users"></i> Khối cửa hàng:</h4>
+            <ul>
+                <li><span>Trưởng Ban: </span>Dư Quốc Hưng</li>
+                <li><span>SDT: </span>098736437</li>
+            </ul>
+            <div class="botton">
+                <div class="botton">
+                    <button class="info-submit" type="button" onclick="submit()"> Liên hệ sửa chữa</button>
+                </div>
+            </div>
+        </div>
+        <script>  
+            function submit(){  
+              alert("Quí khách vui lòng điền thông tin vào phần liên hệ để được hỗ trợ sớm nhất!                                                 Hotline:0826523430 ");  
+            }  
+        </script>
+        <div class="right">
+            
+            <h2> Dịch Vụ</h2>
+            <h3>Qui trình sửa chữa</h3>
+            <ul>
+                <li> Liên hệ khách hàng </li>
+                <li> Truy xuất lỗi </li>
+                <li> Liên hệ báo cáo trưởng ban tình trạng lỗi </li>
+                <li> Tiến hành sửa chữa lỗi </li>
+                <li> Vệ sinh</li>
+            </ul>
+            <h3> Qui tắc 3Q HP Furniture</h3>
+            <ul>
+                <li> Quan Tâm</li>
+                <li> Qui Trình</li>
+                <li> Quyết Đoán</li>
+            </ul>            
+        </div>
+    </nav>  
+    <div class="space"></div>
+    <div class="img-agency">
+        <img src="villa/img-agency.jpg" alt="">      
+    </div>
+ <section class="fbzone">
+        <div class="my-feedback">
+            <div class="feedback">
+                <img src="service/2.jpg">
+                <h5>ông: QUÁCH GIA HƯNG</h5>
+                <p>Tôi cảm thấy bản thân mình rất may mắn khi được hợp tác với một công ty đầy sức tẻ và uy tính như thế.</p>
+            </div>
+            <div class="feedback">
+                <img src="service/1.jpg">
+                <h5>bà: LÊ YÊN NHI</h5>
+                <p> Sự chuyên nghiệp và nhiệt tình của HP Furniture đã chinh phục được cả tôi và gia đình tôi.</p>
+            </div>
+            <div class="feedback">
+                <img src="service/3.jpg">
+                <h5>ông: NGUYỄN QUANG TIẾN</h5>
+                <p>Nhờ có HP Furniture mà giờ đây tôi đã sở hữu được không gian vô cùng hiện đại. Tôi sẽ giới thiệu HP đến với bạn bè tôi!</p>
+           </div>
+        </div>
+    </section>
+    <div class="hr">
+        <h1>TUYỂN DỤNG</h1>
+        <div></div>
+    </div>
+    <div class="color"></div>
+    <nav class="main">       
+        <div class="left">
+            <img src="text idea/service.jpg"> 
+            <h3><i class="fa fa-map-marker"></i> TP. Hồ Chí Minh</h3>
+            <h3><i class="fa fa-users"></i> Khối cửa hàng:</h3>
+            <ul>
+                <li><span>Mức Lương: </span>thỏa thuận</li>
+                <li><span>Hình Thức: </span>part-time</li>
+                <li><span>Phòng Ban: </span>60/18A Huỳnh Khương An</li>
+            </ul>
+            <div class="botton">
+            <button type="button"><a class="ggform" href="https://docs.google.com/forms/d/e/1FAIpQLSeQyek2eWk2FHcgcqmJBzZY9JnqF-T2P7NWO2em6Kvg8NvNjA/viewform">Submit</a> </button>
+            </div>
+        </div>       
+        <div class="right">          
+            <h2>MÔ TẢ CÔNG VIỆC</h2>
+            <h3>Trách nhiệm.</h3>
+            <ul>
+                <li> Tinh thần làm việc cao</li>
+                <li> Kỹ năng giao tiếp tốt </li>
+                <li> Kỹ năng giải quyết vấn đề </li>
+                <li> Tự tin </li>
+                <li> Có tinh thần đồng đội</li>
+            </ul>
+            <h3>Yêu cầu</h3>
+            <ul>
+                <li>Trên 18 tuổi</li>
+                <li>Tốt nghiệp THPT</li>
+                <li>Thời Gian</li>
+            </ul>
+        </div>
+    </nav>
+   </content>
+   <div class="space"></div>
+   <div id="ontop">
+    <i class="fa fa-angle-double-up"></i>
+  </div>
+
+   <footer>    
+    <h1>Liên hệ</h1>
+    <hr width="100%">
+    <div class="logofooter">
+            <img src="text idea/logoHP.jpg" alt="">
+        </div>
+    <div class="menufooter">
+    <div class="col25">
+        <ul>
+          <li><i class="fa fa-map-marker"></i> 60/18A Huỳnh Khương An, P5, Gò Vấp, TP.HCM</li>
+          <li><i class="fa fa-phone"></i> Phone: <a href="#"  class="linkcolor">0826523430</a> - <a href="#"  class="linkcolor">0901248851</a></li>
+          <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a></li>
+          <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="col25">
+        <ul>
+            <li><i class="fa fa-comments"></i><a href="#"  class="linkcolor"> Phản hồi khách hàng</a></li>
+            <li><i class="fa fa-info"></i><a href="#"  class="linkcolor">     Thông tin tuyển dụng</a></li>  
+        </ul>
+    </div>
+    <div class="col50">
+        <table class="content">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Your name...">  
+                </td>
+                <td>
+                    <input type="text" placeholder="Email...">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea placeholder="Message..." ></textarea>
+                </td>
+                
+            </tr>
+            <tr>
+              <td colspan="2" class="button" >
+                 
+                  <button class="info-submit" type="button" onclick="hello()"> Submit </button>
+              </td>
+          </tr>
+          <script>  
+              function hello(){  
+                alert("Thông tin của bạn đã được gửi. Cảm ơn bạn đã đồng hành cùng HP Furniture");  
+              }  
+          </script>
+        </table>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

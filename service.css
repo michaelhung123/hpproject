@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     color: white;
 }
 /* MENU */
@@ -14,7 +14,7 @@ div.nav{
     background-color: rgb(0,0,0);
     width: 100%;
     }
-    header{
+    div.nav header{
     /* width: 1700px; */
     margin:0 auto;
     /* max-width: 100%; */
@@ -22,51 +22,51 @@ div.nav{
     padding: 0px 55px;
     height: 70px; /* chiều cao của div.nav đến section ảnh*/ 
     }
-    div.logo{
+    div.nav div.logo{
     width: 25%;
     padding: 20px 0px;
     }
-    div.menu{
+    div.nav div.menu{
     width: 75%;
     }
-    div.logo > a >img{
+    div.nav div.logo > a >img{
     width: 100%;
     }
-    .menu > ul{
+    div.nav .menu > ul{
       list-style-type: none;
       display: flex;
       width: 100%;
     }
-    .menu > ul > li.item {
+    div.nav .menu > ul > li.item {
     padding: 25px;
     padding-top: 10px;
     }
-    .menu > ul > li.item >a{
+    div.nav .menu > ul > li.item >a{
       color: #999;
       text-decoration: none;
       font-size: 15px;
     }
-    hr{
+    div.nav hr{
     position: relative;
     z-index: 999;
     background: white;
     margin-top: 0;
     }
-    .phone > a > span > img{
+    div.nav .phone > a > span > img{
       width: 4%;
     }
-    .phone {
+    div.nav .phone {
       padding-top: 20px;
       text-align: center;
     }
-    .phone > a {
+    div.nav .phone > a {
       padding: 3px;
     }
-    .phone > a > img{
+    div.nav .phone > a > img{
       width: 7%;
     }
     /* MENU HIDDEN */
-    div.dropmenu{
+    div.nav div.dropmenu{
       visibility: hidden;
       transform: translateY(-20px);
       transition: opacity 0.5s ease,transform 0.5s ease; 
@@ -77,45 +77,45 @@ div.nav{
       right: 0;
       transition-duration: 0.8s; /* thời gian diễn ra hiệu ứng*/
     }
-    .item:hover .dropmenu{
+    div.nav .item:hover .dropmenu{
       visibility: visible;
       opacity: 1;
       transform: translateY(0);
     }
-    div.dropmenu-sub{
+    div.nav div.dropmenu-sub{
       height: 275px;
       width: 1500px;
       margin-left: auto;
       margin-right: auto;
     }
-    div.menu-group{
+    div.nav div.menu-group{
       float: left;
       width: 25%;
     }
-    h3 > a:hover{
+    div.nav h3 > a:hover{
       color: white;
     }
-    a:hover{
+    div.nav a:hover{
       color:#999;
       text-decoration-color: white;
     }
-    a{
+    div.nav a{
       font-size: 13px;
       font-family: 'Montserrat', sans-serif;
       text-align: left;
       color: #999;
       text-decoration: none;
     }
-    h3 > a{
+    div.nav h3 > a{
       color: white;
       font-size: 16px;
       font-weight: bold;
       padding: 10px;
     }
-    ul > ul > li{
+    div.nav ul > ul > li{
       padding: 8px 10px;
     }
-    ul{
+    div.nav ul{
       list-style-type: none;
     }
     /* CSS HOVER MENU */
@@ -159,8 +159,8 @@ div.nav{
     opacity: 1;
     }
 
-     /* SECTION */
-  section{
+    /* first*/
+  first{
     padding-top: 70px;
   }
   hr{
@@ -169,28 +169,20 @@ div.nav{
     background:#444343 !important;
     margin-top: 0;
     }
-ul.menu-item{
-  padding: 20px 0px;
-  margin-bottom: 0px;
-  text-decoration: none;
-  display: flex;
-}
-ul.menu-item >li{
-  padding: 0px 5px;
-}
-ul.menu-item >li>a{
-  font-size: 14px;
-}
-div.box-furniture{
-  background-color: rgb(253, 253, 253);
-}
-div.box-main{
+
+  div.box-main{
   background-color: #111111;
   height: 350px;
 }
-h1{
+ div.box-text h1{
     font-size: 48px;
   font-weight: bold;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+div.box-text h2{
+  font-size: 30px;
+  margin: 30px;
   text-align: center;
 }
 div.main{
@@ -213,45 +205,108 @@ div.box-text{
 }
 
 /* CONTENT */
-img{
-  width: 100%;
+content{
+    color: black !important;
 }
-.group{
-  width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+div.hr{
+    height: auto;
 }
-.produce{
-  display: flex;
-  flex-wrap: wrap;
+div.hr > div{
+    margin-bottom: 10px;
+    width: 20%;
+    border: 2px solid;
 }
-div.item-produce{
-  width: 33.33%;
-  padding: 10px;
+div.hr > h1{
+    margin-bottom: 0;
+    font-family: monospace;
+    font-style: italic;
 }
-.text{
-  color:#111111;
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-}
-.text-p{
-  color:#111111;
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-}
-hr.i{
-  position: relative;
-  z-index: 1;
-  background: #D8D8D8 !important;
-  margin-top: 28px;
-  margin-left: 20px;
+div.color{
+    background-color: #363636;
+    height: 20px;
+    margin-bottom: 5px;
 }
 
+/* NAV */
+nav.main{
+    width: 100%;
+    display: flex;
+}
+div.left ul{
+    margin: 5px;
+}
+div.left ul > li{
+    list-style-type: none;
+}
+h4{
+    padding-left: 10px;
+    margin: 2px;
+}
+ul > li > span {
+    font-weight: bold;
+}
+div.left{
+    width: 30%;
+    border: 1px solid rgb(16, 15, 17);
+    padding: 5px;
+}
+div.left > img {
+    width: 100%;
+}
+div.left button[type=button]{
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid orange;
+  }
+.botton{
+    text-align: center;
+    margin: 10px;
+  }
+  a.ggform{
+      text-decoration: none;
+      color: #fff;
+  }
+ div.right{
+    width: 60%;
+    padding: 30px;
+}
+div.right > h2{
+    text-align: center;
+    text-shadow: 3px 1px 3px rgb(26, 23, 22) ;
+}
+/* SECTION */
+section.fbzone{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: #363636;
+    border-radius: 5px 5px;   
+}
+div.my-feedback{
+    display: flex;
+}
+div.feedback{
+    width: 33%;
+    padding: 5px;
+    margin: 5px;   
+}
+div.feedback > img{
+    position: relative;
+   left: 90px;
+    border-radius: 50%;
+}
+div.feedback > h5{
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+div.feedback > p{
+    color:white;
+}
+div.space{
+    height: 10px;
+}
 /* ON TOP */
 #ontop{
   width: 50px;
@@ -264,76 +319,72 @@ hr.i{
   position: fixed;
   bottom: 15px;
   right: 20px;
-
 }
-/*FOOTER*/
+/* FOOTER */
 footer{
-  padding: 30px;
-  background-color: rgb(10, 11, 12);
-  padding-top: 0px;
-  color: #fff6f9;
-}
+    padding: 30px;
+    background-color: rgb(10, 11, 12);
+    padding-top: 0px;
+  }
  footer h1{
-  display: block;
-  position: relative;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    position: relative;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif; 
+    }
+  footer ul{
+    list-style-type: none;
+  }
+  .logofooter{
+    width: 10%;
+  }
+  .logofooter > img{
+    width: 100%;
     
   }
-
-footer ul{
-  list-style-type: none;
-}
-.logofooter{
-  width: 10%;
-}
-.logofooter > img{
-  width: 100%;
-  
-}
-a.linkcolor{
-  color: rgb(156, 183, 233);
-}
-div.menufooter{
-  display: flex;
-  padding: 5px;
-  width: 100%;
-}
-div.col25{
-  width: 25%;
-}
-div.col25{
-  width: 25%;
-}
-div.col50{
-  width: 50%;
-}
-/* TABLE FOOTER */
-table.content{
-  width: 100%;
-}
-input[type=text]{
-  width: 100%;
-  padding: 10px;
-}
-textarea{
-  width: 100%;
-  padding: 10px;
-  height: 100px;
-}
-button[type=button]{
-  background-color: orange;
-  color: #fff;
-  padding: 15px;
-  border: 1px solid orange;
-}
-.button{
-  text-align: right;
-}
-table.content tr:last-child{
-  text-align: right;
-}
+  a.linkcolor{
+    color: rgb(156, 183, 233);
+  }
+  div.menufooter{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col25{
+    width: 25%;
+  }
+  div.col50{
+    width: 50%;
+  }
+  /* TABLE FOOTER */
+  table.content{
+    width: 100%;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 10px;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+  }
+  button[type=button]{
+    background-color: orange;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid orange;
+  }
+  .button{
+    text-align: right;
+  }
+  table.content tr:last-child{
+    text-align: right;asdasdasdasdasdasdsdasd
+  }

@@ -9,7 +9,26 @@
     <link rel="stylesheet" href="sofa.css">
     <title>HP Furniture</title>
      <!--animation css-->   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
+    <!-- jQ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      if ($(this).scrollTop()){
+        $('#ontop').fadeIn();
+      } else{
+        $('#ontop').fadeOut();
+      }
+    });
+    $('#ontop').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 300)
+    });
+  });
+
+    </script>
+    </head>
 <body>
     <div class="nav">
     <header>
@@ -19,7 +38,7 @@
      <div class="menu">
         <ul>
             <li class="item"><a  href="index.html" class="btn btn-2 color-green">Trang chủ</a></li>
-            <li class="item"><a  href="intro.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
+            <li class="item"><a  href="intro2.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
             <li class="item"><a  href="sanpham.html" class="btn btn-2 color-green">SẢN PHẨM</a>
               <div class="dropmenu">
                 <div class="dropmenu-sub">
@@ -69,7 +88,8 @@
               </div>  
             </li>
             <li class="item"><a  href="#" class="btn btn-2 color-green">DỊCH VỤ</a></li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">LIÊN HỆ</a></li>
+            <li class="item"><a  href="login.html" class="btn btn-2 color-green">ĐĂNG NHÂP</a></li>
+            
         </ul>
     </div>
     <div class="phone">
@@ -169,5 +189,63 @@
       </div>
     </div>
     </content>
+    <div id="ontop">
+      <i class="fa fa-angle-double-up"></i>
+    </div>
+  
+    <footer>    
+      <h1>Liên hệ</h1>
+      <hr width="100%">
+      <div class="logofooter">
+              <img src="text idea/logoHP.jpg" alt="">
+          </div>
+      <div class="menufooter">
+      <div class="col25">
+          <ul>
+            <li><i class="fa fa-map-marker"></i> 60/18A Huỳnh Khương An, P5, Gò Vấp, TP.HCM</li>
+            <li><i class="fa fa-phone"></i> Phone: <a href="#"  class="linkcolor">0826523430</a> - <a href="#"  class="linkcolor">0901248851</a></li>
+            <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a></li>
+            <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
+          </ul>
+      </div>
+      <div class="col25">
+          <ul>
+              <li><i class="fa fa-comments"></i><a href="#"  class="linkcolor"> Phản hồi khách hàng</a></li>
+              <li><i class="fa fa-info"></i><a href="#"  class="linkcolor">     Thông tin tuyển dụng</a></li>  
+          </ul>
+      </div>
+      <div class="col50">
+          <table class="content">
+              <tr>
+                  <td>
+                      <input type="text" placeholder="Your name...">  
+                  </td>
+                  <td>
+                      <input type="text" placeholder="Email...">
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <textarea placeholder="Message..." ></textarea>
+                  </td>
+                  
+              </tr>
+              <tr>
+                <td colspan="2" class="button" >
+                   
+                    <button class="info-submit" type="button" onclick="hello()"> Submit </button>
+                </td>
+            </tr>
+            <script>  
+                function hello(){  
+                  alert("Thông tin của bạn đã được gửi. Cảm ơn bạn đã đồng hành cùng HP Furniture");  
+                }  
+            </script>
+          </table>
+         
+      </div>
+      </div>
+  
+  </footer>
 </body>
 </html>

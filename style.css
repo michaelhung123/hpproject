@@ -199,30 +199,28 @@ opacity: 1;
 section img{
 width: 100%;
 }
-/* Cong trinh */
-div.group-construction{
-  background-color: #202020;
-  margin-top: 50px;
+nav{
+  padding: 30px;
 }
-div.construction{
-  width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
+p{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 30px;
 }
-div.item-construction{
-  padding-right: 70px;
-}
-h5{
+h4{
   margin: 20px;
   text-align: center;
-  font-size: 16px;
   font-weight: 600;
+}
+div.inmain{
+display: flex;
+}
+.row1{
+padding: 10px;
+width: 50%;
+}
+.row1 > img{
+width: 100%;
 }
 hr{
   position: relative;
@@ -230,18 +228,11 @@ hr{
   background: rgb(95, 95, 95);
   margin-top: 0;
   }
-div.item-img{
-  text-align: center;
-}
-div.item-img > a > img{
-  box-shadow: 3px 3px 9px;
-}
-p{
-  text-align: center;
-  padding: 15px 17px;
-  font-size: 0.95rem;
-  font-weight: 300;
-}
+  h4 > a:hover{
+    color:rgb(211, 219, 188);
+    text-decoration: none;    
+  }
+
 /* HINH ANH VE CONG TRINH */
 div.cong-trinh{
   height: 980px;
@@ -303,7 +294,24 @@ div.thc >a{
   color:white;
   font-size: 20px;
 }
-/*FOOTER*/
+
+/* ON TOP */
+#ontop{
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+
+}
+
+/* FOOTER */
+
 footer{
   padding: 30px;
   background-color: rgb(10, 11, 12);
@@ -320,23 +328,7 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     
   }
-h1:before{
-  content:"";
-  position: absolute;
-  top: 0;
-  width: 0;
-  left: auto;
-  right: 0;
-  height: 100%;
-  background-color: rgb(91, 172, 91);
-  transition: .5s;
-  z-index: -2;
-  }
-  h1:hover:before {
-  width: 100%;
-  left:0;
-  right: auto;
-}
+
 footer ul{
   list-style-type: none;
 }
@@ -377,11 +369,14 @@ textarea{
   padding: 10px;
   height: 100px;
 }
-input[type=submit]{
+button[type=button]{
   background-color: orange;
   color: #fff;
   padding: 15px;
   border: 1px solid orange;
+}
+.button{
+  text-align: right;
 }
 table.content tr:last-child{
   text-align: right;

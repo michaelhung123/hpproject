@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <!--Hover css-->  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
     <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
@@ -10,28 +9,101 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="intro2.css">
     <title>HP Furniture</title>
+    <!-- jQ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      if ($(this).scrollTop()){
+        $('#ontop').fadeIn();
+      } else{
+        $('#ontop').fadeOut();
+      }
+    });
+    $('#ontop').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 300)
+    });
+  });
+
+    </script>
 </head>
 <body>
     <div class="nav">
-    <header>
-    <div class="logo">
-        <a href="#"><img src="text idea/HP-tittle1.JPG" alt=""></a>
-    </div>
-     <div class="menu">
-        <ul>
-            <li class="item"><a  href="index.html" class="btn btn-2 color-green">Trang chủ</a></li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">SẢN PHẨM</a></li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">DỊCH VỤ</a></li>
-            <li class="item"><a  href="#" class="btn btn-2 color-green">LIÊN HỆ</a></li>
-        </ul>
-    </div>
-    </header>
-    </div>
+        <header>
+        <div class="logo">
+            <a href="#"><img src="text idea/HP-tittle1.JPG" alt=""></a>
+        </div>
+         <div class="menu">
+            <ul>
+                <li class="item"><a  href="index.html" class="btn btn-2 color-green">Trang chủ</a></li>
+                <li class="item"><a  href="intro2.html" class="btn btn-2 color-green">GIỚI THIỆU</a></li>
+                <li class="item"><a  href="sanpham.html" class="btn btn-2 color-green">SẢN PHẨM</a>
+                  <div class="dropmenu">
+                    <div class="dropmenu-sub">
+                      <div class="menu-group">
+                        <ul>
+                            <h3><a href="#">PHÒNG KHÁCH</a></h3>
+                            <ul>
+                              <li><a href="#">Sofa</a></li>
+                              <li><a href="#">Armchair</a></li>
+                              <li><a href="#">Coffee Table</a></li>
+                              <li><a href="#">Side Table</a></li>
+                            </ul>
+                        </ul>
+                      </div>
+                      <div class="menu-group">
+                        <ul>
+                          <h3><a href="#">PHÒNG NGỦ</a></h3>
+                          <ul>
+                            <li><a href="#">Beds</a></li>
+                            <li><a href="#">Nightstand</a></li>
+                            <li><a href="#">Bench</a></li>
+                            <li><a href="#">Chest</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                      <div class="menu-group">
+                        <ul>
+                          <h3><a href="#">PHÒNG ĂN</a></h3>
+                          <ul>
+                            <li><a href="#">Dining Table</a></li>
+                            <li><a href="#">Dining Chair</a></li>
+                            <li><a href="#">Bar</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                      <div class="menu-group">
+                        <ul>
+                          <h3><a href="#">PHÒNG TẮM</a></h3>
+                         <ul>
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Bathroom Accessories</a></li>
+                          <li><a href="#">Fragrance</a></li>
+                         </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>  
+                </li>
+                <li class="item"><a  href="service.html" class="btn btn-2 color-green">DỊCH VỤ</a></li>
+                <li class="item"><a  href="login.html" class="btn btn-2 color-green">ĐĂNG NHÂP</a></li>
+            </ul>
+        </div>
+        <div class="phone">
+          <a href="#">
+            <span><img src="text idea/iconphone.png" alt=""></span>
+            HOTLINE: +84914938844 
+          </a>
+        </div>
+        </header>
+        </div>
 
 
     <nav>
@@ -75,6 +147,10 @@
             </div>
         </div>
     </nav>
+    <div id="ontop">
+        <i class="fa fa-angle-double-up"></i>
+      </div>
+    
     <footer>
         
         
@@ -90,7 +166,8 @@
             <ul>
                 <li><i class="fa fa-map-marker"></i> 60/18A Huỳnh Khương An, P5, Gò Vấp, TP.HCM</li>
                 <li><i class="fa fa-phone"></i> Phone: <a href="#"  class="linkcolor">0826523430</a> - <a href="#"  class="linkcolor">0901248851</a></li>
-                <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a> - <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
+                <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:nvphuoc23430@gmail.com>">nvphuoc23430@gmail.com</a> </li>
+                <li><i class="fa fa-envelope"></i> Email: <a  class="linkcolor" href="mailto:zuroken140@gmail.com>">zuroken140@gmail.com</a></li>
             </ul>
         </div>
         <div class="col25">
@@ -116,10 +193,16 @@
                     </td>          
                 </tr>
                 <tr>
-                    <td colspan="2" >
-                        <input type="Submit" value="Send to">
+                    <td colspan="2" class="button" >
+                       
+                        <button class="info-submit" type="button" onclick="hello()"> Submit </button>
                     </td>
                 </tr>
+                <script>  
+                    function hello(){  
+                      alert("Thông tin của bạn đã được gửi. Cảm ơn bạn đã đồng hành cùng HP Furniture");  
+                    }  
+                </script>
             </table>
            
         </div>
