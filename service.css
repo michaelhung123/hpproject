@@ -291,9 +291,12 @@ div.feedback{
     padding: 5px;
     margin: 5px;   
 }
-div.feedback > img{
+div.feedback > div{
+  text-align: center;
+}
+div.feedback > div > img{
     position: relative;
-   left: 90px;
+    left: 40px;
     border-radius: 50%;
 }
 div.feedback > h5{
@@ -302,6 +305,9 @@ div.feedback > h5{
     color: #fff;
 }
 div.feedback > p{
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 10px;
     color:white;
 }
 div.space{
